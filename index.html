@@ -69,14 +69,43 @@
 
                         <div class="column box">
                             <h2 class="is-title is-size-3">Filtros</h2>
-                            <div class="columns">
-                                <div class="column"></div>
-                                <div class="column"></div>
+                            <div class="columns is-centered">
+
+                                <div class="field">
+                                    <label class="label">Tipo</label>
+                                    <div class="control">
+                                      <div class="select">
+                                        <select>
+                                          <option>Todos</option>
+                                          <option>Gastos</option>
+                                          <option>Ganancias</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <label class="label">Categorías</label>
+                                    <div class="control">
+                                      <div class="select">
+                                        <select>
+                                          <option>Todas</option>
+                                          <option>Comidas</option>
+                                          <option>Servicios</option>
+                                          <option>Salidas</option>
+                                          <option>Educación</option>
+                                          <option>Transporte</option>
+                                          <option>Trabajo</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <label class="label">Desde</label>
+                                    <p class="control">
+                                        <input class="input" type="date">
+                                    </p>
+                                </div>
+                                
                             </div>
-                            <div class="columns">
-                                <div class="column"></div>
-                                <div class="column"></div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="column is-7">
@@ -103,17 +132,79 @@
             </div>
         </section>
         <!-- Nueva vista: seccion categorías -->
-        <section class="section">
+        <section class="section" id="categorias">
             <div class="container">
                 <div class="column is-8 is-offset-2">
                     <div class="box">
                         <h2 class="is-title is-size-3">Categorías</h2>
                         <label class="label">Nombre</label>
-                        <div class="control">
-                            <input class="input" type="text">
+
+                        <div class="field is-grouped">
+                            <div class="control is-expanded">
+                                <input class="input" type="text">
+                            </div>
+                            <div class="control">
+                                <button class="button is-primary">Agregar</button>
+                            </div>
                         </div>
-                        <div class="control">
-                            <button class="button is-primary">Agregar</button>
+                        <div class="columns">
+                            <div class="column">
+                                <span>Comida</span>
+                            </div>
+                            <div class="column is-narrow"> 
+                                <a href="#">Editar</a>
+                                <a href="">Eliminar</a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <span>Servicios</span>
+                            </div>
+                            <div class="column is-narrow"> 
+                                <a href="#">Editar</a>
+                                <a href="">Eliminar</a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <span>Salidas</span>
+                            </div>
+                            <div class="column is-narrow"> 
+                                <a href="#">Editar</a>
+                                <a href="">Eliminar</a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <span>Educación</span>
+                            </div>
+                            <div class="column is-narrow"> 
+                                <a href="#">Editar</a>
+                                <a href="">Eliminar</a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <span>Transporte</span>
+                            </div>
+                            <div class="column is-narrow"> 
+                                <a href="#">Editar</a>
+                                <a href="">Eliminar</a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <span>Trabajo</span>
+                            </div>
+                            <div class="column is-narrow"> 
+                                <a href="#">Editar</a>
+                                <a href="">Eliminar</a>
+                            </div>
                         </div>
                     </div>
 

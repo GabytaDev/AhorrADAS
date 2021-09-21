@@ -82,60 +82,62 @@
                                 </div>
 
                             </div>
-
-                            <div>
-                                <div class="field">
-                                    <label class="label">Tipo</label>
-                                    <div class="control ">
-                                        <div class="select is-fullwidth">
-                                            <select>
-                                                <option>Todos</option>
-                                                <option>Gastos</option>
-                                                <option>Ganancias</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="field">
-                                    <label class="label">Categorías</label>
-                                    <div class="control">
-                                        <div class="select is-fullwidth">
-                                            <select>
-                                                <option>Todas</option>
-                                                <option>Comidas</option>
-                                                <option>Servicios</option>
-                                                <option>Salidas</option>
-                                                <option>Educación</option>
-                                                <option>Transporte</option>
-                                                <option>Trabajo</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Desde</label>
-                                    <p class="control">
-                                        <input class="input" type="date">
-                                    </p>
-                                </div>
+                            <form>
                                 <div>
-                                    <label class="label" for=""> Ordena por</label>
-                                    <div class="control ">
-                                        <div class="select is-fullwidth">
-                                            <select>
-                                                <option value="mas-reciente">Mas reciente</option>
-                                                <option value="menos-reciente">Menos reciente</option>
-                                                <option value="mayor-monto">Mayor monto</option>
-                                                <option value="menor-monto">Menor monto</option>
-                                                <option value="a-z">A/Z</option>
-                                                <option value="z-a">Z/A</option>
-                                            </select>
+                                    <div class="field">
+                                        <label class="label">Tipo</label>
+                                        <div class="control ">
+                                            <div class="select is-fullwidth">
+                                                <select>
+                                                    <option>Todos</option>
+                                                    <option>Gastos</option>
+                                                    <option>Ganancias</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
+    
+                                    <div class="field">
+                                        <label class="label">Categorías</label>
+                                        <div class="control">
+                                            <div class="select is-fullwidth">
+                                                <select>
+                                                    <option>Todas</option>
+                                                    <option>Comidas</option>
+                                                    <option>Servicios</option>
+                                                    <option>Salidas</option>
+                                                    <option>Educación</option>
+                                                    <option>Transporte</option>
+                                                    <option>Trabajo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">Desde</label>
+                                        <p class="control">
+                                            <input class="input" type="date">
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <label class="label" for=""> Ordena por</label>
+                                        <div class="control ">
+                                            <div class="select is-fullwidth">
+                                                <select>
+                                                    <option value="mas-reciente">Mas reciente</option>
+                                                    <option value="menos-reciente">Menos reciente</option>
+                                                    <option value="mayor-monto">Mayor monto</option>
+                                                    <option value="menor-monto">Menor monto</option>
+                                                    <option value="a-z">A/Z</option>
+                                                    <option value="z-a">Z/A</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+    
                                 </div>
-
-                            </div>
+                            </form>
+                            
 
                         </div>
                     </div>
@@ -289,6 +291,38 @@
                         </div>
                         <div class="column has-text-right has-text-danger has-text-weight-semibold">-$3000</div>
                     </div>
+                    <!-- sector totales por categorías -->
+                    <h4 class="is-title is-size-4 mb-5 p-b-4">Totales por categorías</h4>
+                    <!-- ******centrar estas columnas!!!*********** -->
+                    <div class="columns">
+                        <div class="column has-text-weight-semibold is-3 mt-4">Categoría</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">Ganancias</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">Gastos</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">Balance</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column has-text-weight-semibold is-3 mt-4">Comida</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">+$0</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">-$3000</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">-$3000</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column has-text-weight-semibold is-3 mt-4">Trabajo</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">+$0</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">-$3000</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">-$3000</div>
+                    </div>
+
+                    <h4 class="is-title is-size-4 mb-5 p-b-4">Totales por mes</h4>
+                    <div class="columns">
+                        <div class="column has-text-weight-semibold is-3 mt-4">Mes</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">+$0</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">-$3000</div>
+                        <div class="column has-text-weight-semibold is-3 mt-4">-$3000</div>
+                    </div>
+                     
                 </div>
 
             </div>

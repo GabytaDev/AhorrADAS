@@ -7,23 +7,26 @@ let seccionCategorias = document.querySelector(".seccion-categorias")
 let seccionPortada = document.querySelector(".seccion-portada")
 let seccionReportes = document.querySelector(".seccion-reportes")
 
-seccionCategorias.style.display = "none"
-seccionReportes.style.display = "none"
-
-botonCategorias.onclick = () => {
-    seccionPortada.style.display = "none"
-    seccionCategorias.style.display = "block"  
+botonCategorias.onclick = (event) => {
+    event.preventDefault();
+    seccionCategorias.classList.remove("is-hidden")
+    seccionPortada.classList.add("is-hidden")  
+    seccionReportes.classList.add("is-hidden")
 }
 
-botonBalance.onclick = () => {
-    seccionPortada.style.display = "block"
-    seccionCategorias.style.display = "none"
-    seccionReportes.style.display = "none"
+
+botonBalance.onclick = (event) => {
+    event.preventDefault();
+    seccionPortada.classList.remove("is-hidden")
+    seccionCategorias.classList.add("is-hidden")
+    seccionReportes.classList.add("is-hidden")
 }
 
-botonReportes.onclick = () => {
-    seccionReportes.style.display = "block"
-    seccionPortada.style.display = "none"
-    seccionCategorias.style.display = "none"
+botonReportes.onclick = (event) => {
+    event.preventDefault();
+    seccionReportes.classList.remove("is-hidden")
+    seccionPortada.classList.add("is-hidden")
+    seccionCategorias.classList.add("is-hidden")
+    
 
 }

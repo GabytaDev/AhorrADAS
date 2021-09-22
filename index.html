@@ -58,17 +58,17 @@
                             <h2 class="is-title is-size-3 has-text-weight-bold">Balance</h2>
                             <div class="columns">
                                 <div class="column is.size-5">Ganancias</div>
-                                <div class="column has-text-success has-text-right">+$0</div>  
+                                <div class="column has-text-success has-text-right">+$0</div>
                             </div>
-                            
+
                             <div class="columns">
                                 <div class="column is.size-5">Gastos</div>
-                                <div class="column has-text-danger has-text-right">-$0</div>  
+                                <div class="column has-text-danger has-text-right">-$0</div>
                             </div>
-                            
+
                             <div class="columns">
                                 <div class="column is-size-4">Total</div>
-                                <div class="column has-text-grey-darker has-text-weight-bold has-text-right">$0</div>  
+                                <div class="column has-text-grey-darker has-text-weight-bold has-text-right">$0</div>
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="field">
                                         <label class="label">Categorías</label>
                                         <div class="control">
@@ -134,14 +134,14 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </form>
-                            
+
 
                         </div>
                     </div>
-                    <!-- columna opeariones: seccion portada -->
+                    <!-- columna operaciones: seccion portada -->
                     <div class="column is-7">
                         <div class="column box">
                             <div class="columns">
@@ -152,7 +152,7 @@
                                     <button class="button is-primary navbar-end">+ Nueva Operación</button>
                                 </div>
                             </div>
-                            
+
                             <figure class="image image is-3by2">
                                 <img src="undraw_wallet_aym5.svg ">
                             </figure>
@@ -166,7 +166,7 @@
             </div>
         </section>
         <!-- Nueva vista: seccion categorías -->
-        <section class="section seccion-categorias is-hidden" id ="id-categorias">
+        <section class="section seccion-categorias is-hidden" id="id-categorias">
             <div class="container">
                 <div class="column is-8 is-offset-2">
                     <div class="box">
@@ -253,7 +253,7 @@
 
                         <h2 class="is-title is-size-2 has-text-weight-bold">Reportes</h2>
                         <h4 class="is-title is-size-4 mb-5 p-b-4">Resumen</h4>
-    
+
                         <div class="columns">
                             <div class="column has-text-weight-semibold is-6 mt-4">Categoría con mayor ganancia</div>
                             <div class="column has-text-right">
@@ -261,7 +261,7 @@
                             </div>
                             <div class="column has-text-right has-text-success has-text-weight-semibold">+$20000</div>
                         </div>
-    
+
                         <div class="columns">
                             <div class="column has-text-weight-semibold is-6">Categoría con mayor gasto</div>
                             <div class="column has-text-right">
@@ -269,7 +269,7 @@
                             </div>
                             <div class="column has-text-right has-text-danger has-text-weight-semibold">-$3000</div>
                         </div>
-    
+
                         <div class="columns">
                             <div class="column has-text-weight-semibold is-6">Categoría con mayor balance</div>
                             <div class="column has-text-right">
@@ -277,7 +277,7 @@
                             </div>
                             <div class="column has-text-right has-text-black-ter has-text-weight-semibold">$20000</div>
                         </div>
-    
+
                         <div class="columns">
                             <div class="column has-text-weight-semibold is-6">Meses con mayor ganancia</div>
                             <div class="column has-text-right">
@@ -285,7 +285,7 @@
                             </div>
                             <div class="column has-text-right has-text-success has-text-weight-semibold">$20000</div>
                         </div>
-    
+
                         <div class="columns">
                             <div class="column has-text-weight-semibold is-6">Mes con mayor gasto</div>
                             <div class="column has-text-right">
@@ -294,7 +294,7 @@
                             <div class="column has-text-right has-text-danger has-text-weight-semibold">-$3000</div>
                         </div>
                     </div>
-                    
+
                     <!-- sector totales por categorías -->
                     <div class="section">
                         <h4 class="is-title is-size-4 mb-5 p-b-4">Totales por categorías</h4>
@@ -312,7 +312,7 @@
                                 <h4 class="has-text-weight-semibold has-text-right">Balance</h4>
                             </div>
                         </div>
-    
+
                         <div class="columns">
                             <div class="column">
                                 <h4 class="has-text-weight-semibold has-text-left">Comida</h4>
@@ -327,7 +327,7 @@
                                 <h4 class="has-text-right">-$3000</h4>
                             </div>
                         </div>
-    
+
                         <div class="columns">
                             <div class="column">
                                 <h4 class="has-text-weight-semibold has-text-left">Trabajo</h4>
@@ -376,9 +376,67 @@
 
                         </div>
                     </div>
-                    
-                     
+
+
                 </div>
+
+            </div>
+        </section>
+        <!-- modal editar operacion -->
+        <section class="section">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="box">
+                        <h2 class="is-title is-size-3 has-text-weight-bold">Editar Operación</h2>
+                        <form>
+                            <label class="label mt-6">Descripción</label>
+                            <div class="field is-grouped">
+                                <div class="control is-expanded">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <label class="label mt-6">Monto</label>
+                            <div class="field is-grouped">
+                                <div class="control is-expanded">
+                                    <input class="input" type="number">
+                                </div>
+                            </div>
+                            <label class="label mt-6">Tipo</label>
+                            <div class="field is-grouped">
+                                <div class="control is-expanded">
+                                    <div class="select">
+                                        <select>
+                                          <option>Gasto</option>
+                                          <option>Ganancia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="label mt-6">Categoría</label>
+                            <div class="field is-grouped">
+                                <div class="control is-expanded">
+                                    <div class="select">
+                                        <select>
+                                          <option>Comida</option>
+                                          <option>Servicios</option>
+                                          <option>Salidas</option>
+                                          <option>Eucacion</option>
+                                          <option>Transporte</option>
+                                          <option>Trabajo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <button class="button is-primary">Agregar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
 
             </div>
         </section>

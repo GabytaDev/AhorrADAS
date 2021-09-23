@@ -30,3 +30,15 @@ botonReportes.onclick = (event) => {
     
 
 }
+
+// menu mobile
+
+let navbarBurger = document.querySelector (".navbar-burger")
+let navbarMenu = document.querySelector(".navbar-menu")
+const botonBurger = document.getElementById("btnBurger")
+
+botonBurger.onclick = () => {
+    navbarBurger.classList.toggle("is-active")
+    navbarMenu.classList.toggle("is-active")
+}
+

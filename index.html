@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <nav class="navbar is-primary is-spaced " role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <!-- navbar items, navbar burger... -->
@@ -47,12 +47,14 @@
             </div>
             
         </nav>
+    </header>
 
+    <main>
         <!-- seccion balance portada -->
         <section class="section seccion-portada">
             <div class="container">
                 <div class="columns is-centered">
-                    <div class="column is-3 is-offset-1">
+                    <div class="column is-3 is-offset-1 is-tablet">
                         <article class="box">
                             <h2 class="is-title is-size-3 has-text-weight-bold">Balance</h2>
                             <div class="columns">
@@ -302,7 +304,7 @@
                     <!-- sector totales por categorías -->
                     <div class="section">
                         <h4 class="is-title is-size-4 mb-5 p-b-4">Totales por categorías</h4>
-                        <div class="columns is-mobile">
+                        <div class="columns is-mobile is-tablet">
                             <div class="column">
                                 <h4 class="has-text-weight-semibold has-text-left">Categoría</h4>
                             </div>
@@ -445,9 +447,88 @@
                     </div>
                 </div>
             </div>
-
-
+        </section>
+         <!-- modal nueva operacion esta en is-hidden -->
+        <section class="seccion is-hidden">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <div class="box">
+                        <h2 class="is-title is-size-3 has-text-weight-bold">Nueva Operación</h2>
+                        <form>
+                            <label class="label mt-6">Descripción</label>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <label class="label">Monto</label>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <input class="input" type="number">
+                                </div>
+                            </div>
+                            <label class="label">Tipo</label>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="select is-fullwidth">
+                                        <select>
+                                            <option>Gasto</option>
+                                            <option>Ganancia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="label">Categoría</label>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <div class="select is-fullwidth">
+                                        <select>
+                                            <option>Comida</option>
+                                            <option>Servicios</option>
+                                            <option>Salidas</option>
+                                            <option>Eucacion</option>
+                                            <option>Transporte</option>
+                                            <option>Trabajo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="label">Fecha</label>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <input class="input" type="date">
+                                </div>
+                            </div>
+                            <div class="buttons mt-6 is-right">
+                                <button class="button is-light">Cancelar</button>
+                                <button class="button is-success">Agregar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- modal editar categoría esta en is-hidden --> 
+        <section class="section is-hidden">
+            <div class="container">
+                <div class="column is-8 is-offset-2">
+                    <div class="box">
+                        <h2 class="is-title is-size-3 has-text-weight-bold">Editar categoría</h2>
+                        <label class="label mt-6">Nombre</label>
+
+                        <div class="field is-grouped">
+                            <div class="control is-expanded">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="buttons mt-6 is-right">
+                            <button class="button is-light">Cancelar</button>
+                            <button class="button is-success">Editar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>   
         </section>
     </main>
 

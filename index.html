@@ -57,17 +57,17 @@
                     <div class="column is-3 is-offset-1 is-tablet">
                         <article class="box">
                             <h2 class="is-title is-size-3 has-text-weight-bold">Balance</h2>
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is.size-5">Ganancias</div>
                                 <div class="column has-text-success has-text-right">+$0</div>
                             </div>
 
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is.size-5">Gastos</div>
                                 <div class="column has-text-danger has-text-right">-$0</div>
                             </div>
 
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is-size-4">Total</div>
                                 <div class="column has-text-grey-darker has-text-weight-bold has-text-right">$0</div>
                             </div>
@@ -79,11 +79,11 @@
                                     <h3 class="is-title is-size-4 has-text-weight-bold">Filtros</h3>
                                 </div>
                                 <div class="column has-text-right">
-                                    <a href="#">Ocultar filtros</a>
+                                    <a href="#" class="ocultar-filtros">Ocultar filtros</a>
                                 </div>
 
                             </div>
-                            <form>
+                            <form class="container-filtros">
                                 <div>
                                     <div class="field">
                                         <label class="label">Tipo</label>
@@ -150,7 +150,7 @@
                                     <h3 class="is-size-4 has-text-weight-bold">Operaciones</h3>
                                 </div>
                                 <div class="column">
-                                    <button class="button is-primary navbar-end">+ Nueva Operación</button>
+                                    <button class="button is-primary navbar-end" id="btn-nueva-operacion">+ Nueva Operación</button>
                                 </div>
                             </div>
                             <div class="columns section">
@@ -252,7 +252,7 @@
             </div>
         </section>
         <!-- Nueva vista : Seccion Reportes -->
-        <section class="section seccion-reportes is-hidden">
+        <section class="section pr-1 pl-1 seccion-reportes is-hidden">
             <div class="column is-8 is-offset-2">
                 <div class="box">
                     <div class="section">
@@ -449,7 +449,7 @@
             </div>
         </section>
          <!-- modal nueva operacion esta en is-hidden -->
-        <section class="seccion is-hidden">
+        <section class="seccion is-hidden seccion-nueva-operacion">
             <div class="columns">
                 <div class="column is-8 is-offset-2">
                     <div class="box">
@@ -500,7 +500,7 @@
                                 </div>
                             </div>
                             <div class="buttons mt-6 is-right">
-                                <button class="button is-light">Cancelar</button>
+                                <button class="button is-light" id="btn-cancelar-operacion">Cancelar</button>
                                 <button class="button is-success">Agregar</button>
                             </div>
                         </form>

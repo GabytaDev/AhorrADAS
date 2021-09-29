@@ -27,9 +27,19 @@ botonReportes.onclick = (event) => {
     seccionReportes.classList.remove("is-hidden")
     seccionPortada.classList.add("is-hidden")
     seccionCategorias.classList.add("is-hidden")
-    
-
 }
+
+// menu mobile
+
+let navbarBurger = document.querySelector (".navbar-burger")
+let navbarMenu = document.querySelector(".navbar-menu")
+const botonBurger = document.getElementById("btnBurger")
+
+botonBurger.onclick = () => {
+    navbarBurger.classList.toggle("is-active")
+    navbarMenu.classList.toggle("is-active")
+}
+
 
 //funcion ocultar filtros//
 
@@ -54,12 +64,12 @@ botonOcultarFiltros.onclick = (event) => {
 const btnNuevaOperacion = document.getElementById("btn-nueva-operacion")
 const seccionNuevaOperacion = document.querySelector(".seccion-nueva-operacion")
 
-
 btnNuevaOperacion.onclick = () => {
     seccionNuevaOperacion.classList.remove("is-hidden");
     seccionPortada.classList.add("is-hidden")
-
 }
+
+//funcion btn cancelar operacion
 const btnCancelarOperacion = document.getElementById("btn-cancelar-operacion")
 
 btnCancelarOperacion.onclick = () => {
@@ -67,15 +77,24 @@ btnCancelarOperacion.onclick = () => {
     seccionPortada.classList.remove("is-hidden")
 }
 
+//funcion editar categoría
 
-// menu mobile
+///secion-categorías seleccionado mas arriba///
+const btnEditarCategoria = document.getElementById("btn-editar-categoria")
+const seccionEditCategoria = document.getElementById("seccion-edit-categoria")
 
-let navbarBurger = document.querySelector (".navbar-burger")
-let navbarMenu = document.querySelector(".navbar-menu")
-const botonBurger = document.getElementById("btnBurger")
-
-botonBurger.onclick = () => {
-    navbarBurger.classList.toggle("is-active")
-    navbarMenu.classList.toggle("is-active")
+btnEditarCategoria.onclick = () => {
+    seccionEditCategoria.classList.remove("is-hidden")
+    seccionCategorias.classList.add("is-hidden")
 }
+
+//funcion btn cancelar en editar categoria
+const btnCancelarEditarCat = document.getElementById("btn-cancear-editar-categoria")
+
+btnCancelarEditarCat.onclick = () => {
+    seccionEditCategoria.classList.add("is-hidden")
+    seccionCategorias.classList.remove("is-hidden")
+}
+
+
 
